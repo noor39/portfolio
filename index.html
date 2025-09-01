@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAZI NOOR AHMED</title>
+    <style>
+        /* CSS to match the aesthetic: Clean, modern, with flex layouts, sans-serif font, subtle colors */
+        :root {
+            --primary-color: #6366f1; /* Indigo default */
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #f3f4f6;
+            --link-color: #3b82f6;
+        }
+        body.dark-mode {
+            --background-color: #1f2937;
+            --text-color: #f3f4f6;
+            --accent-color: #374151;
+            --link-color: #60a5fa;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: var(--accent-color);
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--accent-color);
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .hero p {
+            margin: 0.5rem 0;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .contact-info a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, textarea, button {
+            padding: 0.75rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 0.25rem;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--accent-color);
+            margin-top: 2rem;
+        }
+        .theme-controls {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        select {
+            padding: 0.5rem;
+        }
+        /* Profile photo placeholder */
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="theme-controls">
+            <button id="toggle-theme">Toggle Theme</button>
+            <select id="accent-color">
+                <option value="#6366f1">Indigo</option>
+                <option value="#3b82f6">Blue</option>
+                <option value="#22c55e">Green</option>
+                <option value="#f97316">Orange</option>
+                <option value="#ec4899">Pink</option>
+            </select>
+            <button id="download-cv">Download CV</button>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>KAZI NOOR AHMED</h1>
+        <!-- Add your profile photo here; upload 'profile.jpg' to GitHub and reference it -->
+        <img src="profile.jpg" alt="Kazi Noor Ahmed" class="profile-photo">
+        <p>Strategic Business Analyst</p>
+        <p>Focused on Strategy Execution and Data-Driven Decision-Making. Turning complex data into clear action — aligning people, process, and performance with long-term objectives.</p>
+        <div class="contact-info">
+            <span>Dhaka, Bangladesh</span>
+            <a href="mailto:kznrahmd@gmail.com">kznrahmd@gmail.com</a>
+            <a href="https://www.linkedin.com/in/kazinoorahmed1" target="_blank">LinkedIn</a>
+            <span>+8801704030009</span>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>Profile Summary</h2>
+        <p>Results-driven strategic leader with expertise in Organizational Strategy and Leadership, combining advanced analytics skills (SQL, Power BI, Excel) with cross-functional collaboration to drive business transformation. Proven ability to translate complex data into actionable insights that optimize workflows, enhance employee engagement, and support evidence-based decision-making across all organizational levels. Specializes in aligning people, process and performance with long-term objectives through improved governance, leadership development, and operational efficiency in data management, export strategy, and private sector modernization.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>SQL, PL/SQL & Database Management</li>
+                    <li>Oracle Apex, Oracle Forms, Oracle Reports</li>
+                    <li>Average Keyboard speed: 46 WPM</li>
+                    <li>Advanced Excel, Power BI & Data Visualization</li>
+                    <li>HRIS & ERP Systems</li>
+                    <li>Microsoft Office Package & Google Workspace</li>
+                    <li>Frontend HTML, CSS, SASS, JS.</li>
+                    <li>SEO & Social Media Management</li>
+                    <li>SPSS, SMART PLS</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Professional Skills</h3>
+                <ul>
+                    <li>People Management & Team Work</li>
+                    <li>Strategic Planning & Execution</li>
+                    <li>Organizational Development</li>
+                    <li>Market Research & Insights</li>
+                    <li>Adaptability & Resilience</li>
+                    <li>Social Media Management</li>
+                    <li>Time Management & Deadline-Meeting</li>
+                    <li>Critical Thinking & Decision Making</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Languages</h3>
+                <ul>
+                    <li>English (Reading, Writing, Speaking) Professional Proficiency (Level - B2)</li>
+                    <li>Bengali: Native</li>
+                    <li>Hindi: Conversational</li>
+                    <li>Chinese: HSK 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Intern - Human Resource Department | Abdul Monem Ltd (Igloo Ice Cream Unit) | Sep 2022 - Dec 2022</h3>
+        <ul>
+            <li>Managed comprehensive HR operations: including employee records with 100% accuracy, recruitment support, candidate screening, and maintenance of candidate databases for multiple positions. Assisted in recruitment, payroll, employee appraisal, retention.</li>
+            <li>Coordinated staff development and performance management by organizing workshops, supporting performance appraisals for 200+ employees, and maintaining comprehensive training records.</li>
+            <li>Ensured compliance and employee engagement through adherence to labor law 2006, implementation of HR strategies and SOPs, while supporting wellness programs and conflict resolution processes.</li>
+            <li>Maintained confidentiality and data integrity by handling sensitive employee information, grievance processes, and supporting various employee engagement initiatives across the organization.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education & Training</h2>
+        <ul>
+            <li>Islamic Development Bank - IsDB-BISEW IT Scholarship Programme | Oracle Database Application Development | Result: November 2025</li>
+            <li>University of Dhaka | Master of Business Administration - MBA | Major: Organization Strategy and Leadership | CGPA: 3.31 / 4.00 | Result: February 2025</li>
+            <li>University of Dhaka | Bachelor of Business Administration - BBA | Major: Organization Strategy and Leadership | CGPA: 2.99 / 4.00 | Result: February 2023</li>
+            <li>Mohammadpur Model College | Higher Secondary Certificate - HSC | Discipline: Science | GPA: 4.17 / 5.00 | Result: August 2017</li>
+            <li>Mohammadpur Govt High School | Secondary School Certificate - SSC | Discipline: Science | GPA: 4.72 / 5.00 | Result: August 2015</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>(Add your projects here, e.g., APEX/Power BI work, case competitions, etc. This section is a placeholder for now.)</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <h3>References</h3>
+        <ul>
+            <li>SM Saifuddin Shiblu | Consultant, IsDB-BISEW IT Scholarship Programme | Phone: +8801816246051 | Email: shibluctgbd96@gmail.com | Relation: Mentor</li>
+            <li>Dr. Muhammad Abdul Moyeen | Ex-Dean, Faculty of Business Studies, University of Dhaka | Phone: +8801971521511 | Email: moyeenma@du.ac.bd | Relation: Academic Mentor</li>
+            <li>Md Munir H Patwary | Senior Faculty, IsDB-BISEW IT Scholarship Programme | Phone: +8801715184661 | Email: munirhussain.du@gmail.com | Relation: Academic Mentor</li>
+            <li>Muhammad Mizan Sarwar | General Manager, Abdul Monem Ltd. | Phone: +8801713431618 | Email: m_sarwar83@yahoo.com | Relation: Professional Mentor</li>
+        </ul>
+    </section>
+
+    <footer>
+        © KAZI NOOR AHMED. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript functionalities: Theme toggle, color picker, CV download, contact form to Google Sheets
+        document.getElementById('toggle-theme').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        document.getElementById('accent-color').addEventListener('change', (e) => {
+            document.documentElement.style.setProperty('--primary-color', e.target.value);
+        });
+
+        document.getElementById('download-cv').addEventListener('click', () => {
+            window.location.href = '01_Kazi_Noor_Ahmed.pdf';
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = Object.fromEntries(new FormData(e.target).entries());
+            const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE'; // Replace with your URL from Step 1
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(res => res.json())
+            .then(res => {
+                if (res.result === 'success') {
+                    alert('✅ Message sent successfully!');
+                    e.target.reset();
+                } else {
+                    alert('❌ Error sending message. Try again.');
+                }
+            })
+            .catch(err => {
+                alert('❌ Error sending message. Try again.');
+                console.error(err);
+            });
+        });
+    </script>
+</html>
